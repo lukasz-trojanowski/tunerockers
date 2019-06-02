@@ -2,11 +2,22 @@
   "name": "scrapper",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"cd client && npm start\" \"nodemon app\""
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.23",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "serve-index": "^1.9.1",
+    "socket.io": "^2.2.0",
+    "zs-extract": "^1.0.3"
+  }
 }

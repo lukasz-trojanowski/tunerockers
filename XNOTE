@@ -1,0 +1,8 @@
+event.emit('parsing_start', { genre });
+
+event.emit('parsing_threads_start', { threads: threadurls.length });
+event.emit('thread_parsed', {threadurl: threadLink});
+
+event.emit('parsing_zippyshare_start', { urls: songsDB.length });
+
+socket.emit('parsing_zippyshare', { url: song.zslink });
